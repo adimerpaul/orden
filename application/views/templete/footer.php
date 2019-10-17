@@ -16,11 +16,18 @@
 
 <!-- jQuery -->
 <script src="<?=base_url()?>plugins/jquery/jquery.min.js"></script>
+<script src="<?=base_url()?>plugins/datatables/jquery.dataTables.js"></script>
 <!-- Bootstrap 4 -->
 <script src="<?=base_url()?>plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="<?=base_url()?>dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
+<?=$js?>
 <script src="<?=base_url()?>dist/js/demo.js"></script>
+
+<script>
+$(document).ready(function() {
+    $('#example').DataTable();
+} );</script>
 </body>
 </html>
