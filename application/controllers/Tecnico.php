@@ -22,8 +22,7 @@ class Tecnico extends CI_Controller{
             'tipo'=> ($this->input->post('tipo'))
         ];
          $this->db->insert("tecnico",$tecnico);
-         header("Location: ".base_url()."tecnico");
-         
+         header("Location: ".base_url()."tecnico");         
     }
 
     function update(){
